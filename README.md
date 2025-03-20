@@ -1,15 +1,15 @@
-This is the reference code for [CryptoNote](https://cryptonote.org) cryptocurrency protocol.
+This is the reference code for [CryptoNote](https://ravengold.net) cryptocurrency protocol.
 
-* Launch your own CryptoNote currency: [CryptoNote Starter](https://cryptonotestarter.org/)
-* CryptoNote reference implementation: [CryptoNoteCoin](https://cryptonote-coin.org)
-* Discussion board and support: [CryptoNote Forum](https://forum.cryptonote.org)
+* Launch your own CryptoNote currency: [CryptoNote Starter](https://ravengold.net/)
+* CryptoNote reference implementation: [CryptoNoteCoin](https://ravengold.net)
+* Discussion board and support: [CryptoNote Forum](https://forum.ravengold.net)
 
 ## CryptoNote forking how-to
 
 ### Preparation
 
 1. Create an account on [GitHub.com](github.com)
-2. Fork [CryptoNote repository](https://github.com/cryptonotefoundation/cryptonote)
+2. Fork [CryptoNote repository](https://github.com/cryptonotefoundation/ravengold)
 3. Buy one or two Ubuntu-based dedicated servers (at least 2Gb of RAM) for seed nodes.
 
 
@@ -24,14 +24,14 @@ Name must be specified twice:
 
 Example: 
 ```
-const char CRYPTONOTE_NAME[] = "furiouscoin";
+const char CRYPTONOTE_NAME[] = "ravengold";
 ```
 
 **2. in src/CMakeList.txt file** - set_property(TARGET daemon PROPERTY OUTPUT_NAME "YOURCOINNAME**d**")
 
 Example: 
 ```
-set_property(TARGET daemon PROPERTY OUTPUT_NAME "furiouscoind")
+set_property(TARGET daemon PROPERTY OUTPUT_NAME "ravengold")
 ```
 
 **Note:** You should also change a repository name.
